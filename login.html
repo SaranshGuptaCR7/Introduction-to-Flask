@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"></lik>
+    </head>
+    <body>
+        <div class="container mt-5">
+            <div align="center" class="bg-light">
+                <div class="m-3">
+                    <div class="header">
+                        <h1 class="word">Login</h1>
+                    </div>
+                    {% if msg %}
+                    <div class="alert alert-info">{{msg}}</div>
+                    {% endif%}
+                    <form action="/" method="POST">
+                        <div class="row m-3">
+                            <div class="col-4">
+                                <label for="username">Username:</label>
+                            </div>
+                            <div class="col-8">
+                                <input id="username" name="username" type="text" placeholder="Enter your username" class="form-control">
+                            </div>
+                        </div>
+                        <div class="row m-3">
+                            <div class="col-4">
+                                <label for="username">Password:</label>
+                           </div>
+                           <div class="col-8">
+                               <input id="password" name="password" type="password" placeholder="Enter your password" class="textbox form-control"><br><br>
+                        </div>
+                    </div>
+                    </form>
+                    <input type="submit" value="Sign Up" class="btn btn-info"><br><br>
+                </form>
+            <p class="bottom"> Already have account? <a class="bottom" href="/login"> Sign In here</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
